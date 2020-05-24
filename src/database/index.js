@@ -1,3 +1,4 @@
+
 const knexFile = require('../../knexfile');
 const knex = require('knex')(knex.development);
 
