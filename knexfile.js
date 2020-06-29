@@ -1,15 +1,18 @@
+// Update with your config settings.
 module.exports = {
-
   development: {
     client: 'pg',
     connection: {
+      database: 'cadastro',
       user: 'postgres',
       password: 'root'
     },
-    migrations:{
+    migrations: {
       tableName: 'knex_migrations',
-      directory: `${__dirname}/src/migrations`
+      directory: `${__dirname}/src/database/migrations`
+    },
+    seeds: {
+      directory: `${__dirname}/src/database/seeds`
     }
-    
   },
 };
