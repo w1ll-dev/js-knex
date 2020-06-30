@@ -12,7 +12,7 @@ route
     .delete('/users/:id', UsersController.delete)
 
     // projects routes
-    .get('/projects/:user_id', ProjectsController.index)
+    .get('/projects/', ProjectsController.index)
     .post('/projects', ProjectsController.create)
-    
+     
 module.exports = route

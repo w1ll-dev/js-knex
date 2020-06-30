@@ -1,12 +1,15 @@
 const knex = require('../database')
 module.exports = {
     async index(req, res) {
-        const { user_id } = req.params
+        const { user_id } = req.query
 
         const query = knex('projects')
 
         if (user_id) {
-            query.where({ user_id })
+            query
+                .where({ user_id })
+                .join('users', 'users.id', '=', 'projects.user_id')
+                .select('projects.*', 'users.userName')
         }
 
         const results = await query
