@@ -16,4 +16,10 @@ app.use((error, req, res, next) => {
     }
 })
 
+app.use((req, res, next) => {
+    const error = new Error('not found')
+    error.status = 404 
+    next(error)
+})
+
 app.listen(port, () => console.log(`server running on port ${port}`));
