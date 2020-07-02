@@ -1,1 +1,1 @@
-![js_knex](https://user-images.githubusercontent.com/52263928/86403518-40609d80-bc84-11ea-857a-b02fa1bc1798.png)
+![js_knex](https://user-images.githubusercontent.com/52263928/86404438-02fd0f80-bc86-11ea-810b-1836e65b46c0.png)
